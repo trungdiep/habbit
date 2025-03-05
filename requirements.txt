@@ -1,0 +1,7 @@
+asgiref==3.8.1
+Django==5.1.6
+django-prometheus==2.3.1
+gunicorn==23.0.0
+packaging==24.2
+prometheus_client==0.21.1
+sqlparse==0.5.3
