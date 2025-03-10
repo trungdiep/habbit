@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&f@^z!+z73nq42i55c0-l_cj6hurm2e8v&z$=a9lk^&ul8pxm&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['550909.dvt', 'www.550909.dvt']
+ALLOWED_HOSTS = ['550909.dvt', 'www.550909.dvt', "*"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django_prometheus.middleware.PrometheusBeforeMiddleware',
+    'backend.middleware.ProcessViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
